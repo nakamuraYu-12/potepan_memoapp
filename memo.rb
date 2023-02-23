@@ -36,8 +36,8 @@ if memo_type == 1
     p "メモしたい内容を記載してください"
     p "完了したらCtrl+Dを押します"
     memo_content = STDIN.read.chomp
-
-    write_memo(file_name,memo_content)
+    #メソッド名が誤っていたため修正しました
+    write_new(file_name,memo_content)
 
 #2入力時(既存csv書き込み)
 elsif memo_type == 2
